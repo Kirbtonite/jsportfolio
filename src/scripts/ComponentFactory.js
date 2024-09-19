@@ -1,7 +1,18 @@
+// importer vos composantes ici
+import Header from './components/Header';
+import Scrolly from './components/Scrolly';
+import Carousel from './components/Carousel';
+import Youtube from './components/Youtube';
+
 export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
-    this.componentList = {};
+    this.componentList = {
+      Youtube,
+      Carousel,
+      Header,
+      Scrolly,
+    };
     this.init();
   }
   init() {
