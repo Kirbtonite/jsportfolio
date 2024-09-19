@@ -6,8 +6,11 @@
     --font-primary: 'stratos', sans-serif;
     --font-secondary: 'Barlow', sans-serif;
 
-    --font-size-content: #{typo(16px, 18px)};
+    --font-size-content: #{typo(20px, 28px)};
 
     /// Grosseur des textes
-    --font-size-h1: #{typo(28px, 42px)};
+    --font-size-h1: #{typo(80px, 120px)};
+    --font-size-h2: #{typo(60px, 80px)};
+    --font-size-h3: #{typo(40px, 60px)};
+    --font-size-h4: #{typo(28px, 40px)};
 }
