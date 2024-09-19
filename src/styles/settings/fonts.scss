@@ -1,0 +1,13 @@
+/* ==========================================================================
+   FONTS / SETTINGS
+   ========================================================================== */
+/// Font family
+:root {
+    --font-primary: 'stratos', sans-serif;
+    --font-secondary: 'Barlow', sans-serif;
+
+    --font-size-content: #{typo(16px, 18px)};
+
+    /// Grosseur des textes
+    --font-size-h1: #{typo(28px, 42px)};
+}
