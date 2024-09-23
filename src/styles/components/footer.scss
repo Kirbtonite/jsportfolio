@@ -1,6 +1,9 @@
 .footer {
     background-color: var(--color-bg-primary);
     color: var(--color-primary);
+    .wrapper {
+        margin: 0 auto;
+    }
 
     h3,
     .copyright {

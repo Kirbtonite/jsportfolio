@@ -1,0 +1,8 @@
+.cards {
+}
+.card {
+    display: flex;
+}
+.card.right {
+    flex-direction: row-reverse;
+}
