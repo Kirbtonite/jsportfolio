@@ -2,6 +2,33 @@
 }
 .card {
     display: flex;
+    column-gap: 120px;
+    .contexts {
+        display: flex;
+        border-width: 3px 0;
+        border-style: solid;
+        border-color: var(--color-black);
+        padding: 10px 0;
+        .vertical__line {
+            width: 2px;
+
+            background-color: var(--color-black);
+            margin: 0 20px;
+        }
+    }
+    .card__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        p {
+            margin: 0;
+        }
+        .button {
+            width: 100%;
+            max-width: 240px;
+            margin: 0;
+        }
+    }
 }
 .card.right {
     flex-direction: row-reverse;

@@ -6,7 +6,10 @@
     border-radius: 30px;
     margin: 40px 0;
     border: none;
+    position: relative;
+
     &:hover {
-        color: var(--color-hover);
+        text-decoration: underline;
+        background-color: var(--color-hover);
     }
 }
