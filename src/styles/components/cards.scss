@@ -1,10 +1,22 @@
 .cards {
+    display: grid;
+    gap: 70px;
+    margin-top: 70px;
 }
 .card {
     display: flex;
-    column-gap: 120px;
+    column-gap: 100px;
+    align-items: center;
+
+    border-width: 3px 0;
+    border-style: solid;
+    border-color: var(--color-black);
+
+    padding: 50px 0;
+
     .contexts {
         display: flex;
+
         border-width: 3px 0;
         border-style: solid;
         border-color: var(--color-black);
@@ -25,9 +37,17 @@
         }
         .button {
             width: 100%;
-            max-width: 240px;
+            max-width: 270px;
             margin: 0;
         }
+    }
+    .card__media img {
+        display: block;
+
+        height: 100%;
+        max-width: 500px;
+        max-height: 480px;
+        object-fit: fill;
     }
 }
 .card.right {

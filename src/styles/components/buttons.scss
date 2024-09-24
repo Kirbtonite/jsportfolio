@@ -1,12 +1,17 @@
 .button {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-transform: uppercase;
+
     padding: 20px 30px;
     background-color: var(--color-white);
     border-radius: 30px;
     margin: 40px 0;
     border: none;
     position: relative;
+
+    cursor: pointer;
 
     &:hover {
         text-decoration: underline;
