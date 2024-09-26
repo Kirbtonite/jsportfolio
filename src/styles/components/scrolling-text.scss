@@ -1,0 +1,30 @@
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+.marquee {
+    animation-name: scrolling__qualities;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+}
+
+.marquee .scrolling__text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+    font-weight: 700;
+}
+
+.marquee2 .scrolling__text {
+    animation-delay: 7.5s;
+}
+.scrolling__qualities {
+    padding: 50px 0 70px;
+    margin-bottom: 70px;
+}

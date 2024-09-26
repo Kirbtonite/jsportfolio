@@ -1,0 +1,12 @@
+.grid__softwares {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    .software {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        gap: 30px;
+    }
+}
