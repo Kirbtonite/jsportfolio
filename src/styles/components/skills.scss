@@ -1,0 +1,14 @@
+.skills .wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .thinker {
+        width: 5%;
+    }
+}
