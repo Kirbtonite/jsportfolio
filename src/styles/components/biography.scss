@@ -1,0 +1,10 @@
+.biography {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+    }
+    h4 {
+        margin: 20px 0;
+    }
+}
