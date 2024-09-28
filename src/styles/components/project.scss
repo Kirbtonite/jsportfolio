@@ -1,0 +1,15 @@
+.step__description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px 0;
+}
+.screenshots__examples {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
