@@ -16,10 +16,14 @@
     .wrapper {
         padding: 70px 0;
     }
+    .social__medias {
+        justify-content: center;
+        gap: 30px;
+    }
 }
 .social__medias {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+
+    gap: 20px;
     margin: 30px 0;
 }
