@@ -47,6 +47,62 @@
                 </div>
             </div>
         </div>
+        <div class="contact__form">
+            <form action="#" class="form" data-component="Form" data-scrolly="close">
+                <div class="form__body">
+                    <fieldset class="grid">
+                        <div class="input">
+                            <label class="input__label" for="full name">Votre nom</label>
+                            <input
+                                class="input__element"
+                                type="text"
+                                name="full name"
+                                id="full name"
+                                placeholder="Nom complète"
+                                required
+                            />
+                            <p class="error__text">Votre nom complète est nécessaire!</p>
+                        </div>
+
+                        <div class="input">
+                            <label class="input__label" for="email">Votre adresse courriel</label>
+                            <input
+                                class="input__element"
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="Ex : patrice.tremblay@gmail.com"
+                                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                                required
+                            />
+                            <p class="error__text">L’adresse courriel n’est pas valide!</p>
+                        </div>
+
+                        <div class="u-grid-fullwidth">
+                            <div class="input textarea u-grid-fullwidth">
+                                <label class="input__label" for="message">Votre message</label>
+                                <textarea
+                                    class="input__element"
+                                    name="message"
+                                    id="message"
+                                    maxlength="500"
+                                    required
+                                ></textarea>
+                                <p class="error__text">Une message est nécessaire!</p>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <footer class="form__footer">
+                        <button class="button">Soumettre</button>
+                    </footer>
+                </div>
+
+                <div class="form__confirmation">
+                    <h2>Merci</h2>
+                    <p>Votre formulaire a bien été soumis</p>
+                </div>
+            </form>
+        </div>
     </div>
 </section>
 {% include '_partials/_footer.html' %}

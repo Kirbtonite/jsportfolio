@@ -1,4 +1,5 @@
 .socials {
+    margin: 20px 0 80px;
 }
 .social {
     display: flex;
@@ -6,5 +7,18 @@
     gap: 20px;
     .icon {
         color: var(--color-black);
+    }
+}
+.social__medias {
+    margin: 0;
+}
+.contact .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact__form {
+    .error__text {
+        font-size: 16px;
+        color: var(--color-error);
     }
 }
