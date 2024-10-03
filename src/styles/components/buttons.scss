@@ -4,22 +4,46 @@
     align-items: center;
     text-transform: uppercase;
 
-    padding: 20px 30px;
+    padding: 20px 0;
     background-color: var(--color-white);
     border-radius: 30px;
     margin: 40px 0;
     border: none;
     position: relative;
 
+    transition: 0.3s all ease-out;
+
     cursor: pointer;
 
     &:hover {
-        text-decoration: underline;
-        background-color: var(--color-hover);
+        background-color: transparent;
         color: var(--color-black);
     }
 }
 .hero .button {
     width: 350px;
     max-width: 100%;
+}
+.button--anim {
+    &:hover {
+        text-decoration: none;
+        &::before {
+            transform: translateX(0);
+            transition: transform 0.3s ease-in;
+        }
+    }
+    overflow: hidden;
+}
+.button--anim::before {
+    content: '';
+    background-color: var(--color-hover);
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateX(-110%) skewX(60deg);
+    transition: transform 0.3s ease-in;
 }
