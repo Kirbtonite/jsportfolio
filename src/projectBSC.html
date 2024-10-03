@@ -111,46 +111,48 @@
                 CSS pour bien structurer la section et donner son style.
             </p>
         </div>
-        <div class="gallery__images">
-            <div class="gallery__card">
-                <div class="gallery__media">
-                    <img src="assets/images/css_bsc.png" alt="css form" />
+        <div class="gallery" data-component="Modal">
+            <div class="gallery__images">
+                <div class="gallery__card">
+                    <div class="gallery__media">
+                        <img src="assets/images/css_bsc.png" alt="css form" class="js-modal" />
+                    </div>
+                    <div class="gallery__content">
+                        <p>Code CSS/SCSS pour le formulaire</p>
+                    </div>
                 </div>
-                <div class="gallery__content">
-                    <p>Code CSS/SCSS pour le formulaire</p>
-                </div>
-            </div>
-            <div class="gallery__card">
-                <div class="gallery__media">
-                    <img src="assets/images/html_bsc.png" alt="html form" />
-                </div>
-                <div class="gallery__content">
-                    <p>Code HTML pour le formulaire</p>
-                </div>
-            </div>
-        </div>
-        <div class="step__description">
-            <h2>Programmation <span class="green__text">JavaScript</span></h2>
-            <p>
-                Pour terminer, je fais du JavaScript pour les sections intéractives comme le carrousel, le header, le
-                vidéo dans le hero, etc.
-            </p>
-        </div>
-        <div class="gallery__images">
-            <div class="gallery__card">
-                <div class="gallery__media">
-                    <img src="assets/images/js_video.png" alt="js video" />
-                </div>
-                <div class="gallery__content">
-                    <p>Script JavaScript pour les vidéos</p>
+                <div class="gallery__card">
+                    <div class="gallery__media">
+                        <img src="assets/images/html_bsc.png" alt="html form" class="js-modal" />
+                    </div>
+                    <div class="gallery__content">
+                        <p>Code HTML pour le formulaire</p>
+                    </div>
                 </div>
             </div>
-            <div class="gallery__card">
-                <div class="gallery__media">
-                    <img src="assets/images/js_header.png" alt="js header" />
+            <div class="step__description">
+                <h2>Programmation <span class="green__text">JavaScript</span></h2>
+                <p>
+                    Pour terminer, je fais du JavaScript pour les sections intéractives comme le carrousel, le header,
+                    le vidéo dans le hero, etc.
+                </p>
+            </div>
+            <div class="gallery__images">
+                <div class="gallery__card">
+                    <div class="gallery__media">
+                        <img src="assets/images/js_video.png" alt="js video" class="js-modal" />
+                    </div>
+                    <div class="gallery__content">
+                        <p>Script JavaScript pour les vidéos</p>
+                    </div>
                 </div>
-                <div class="gallery__content">
-                    <p>Script JavaScript pour le header</p>
+                <div class="gallery__card">
+                    <div class="gallery__media">
+                        <img src="assets/images/js_header.png" alt="js header" class="js-modal" />
+                    </div>
+                    <div class="gallery__content">
+                        <p>Script JavaScript pour le header</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -158,9 +160,10 @@
 </section>
 <div class="modal">
     <div class="modal__content">
-        <svg class="icon icon--lg">
+        <svg class="icon icon--lg close-modal">
             <use xlink:href="#icon-close"></use>
         </svg>
+        <!-- <img src="assets/images/html_bsc.png" alt="html form" /> -->
     </div>
 </div>
 {% include '_partials/_footer.html' %}
