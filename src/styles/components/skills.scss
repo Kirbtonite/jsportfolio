@@ -3,11 +3,19 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    .crown {
+        position: absolute;
+        bottom: -18%;
+        right: 10%;
+    }
 }
 .skill {
     display: flex;
     align-items: center;
     gap: 20px;
+    .icon {
+        color: var(--color-hover);
+    }
     .thinker {
         width: 5%;
     }
