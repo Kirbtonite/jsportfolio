@@ -9,6 +9,7 @@
 .marquee {
     display: inline-block;
     animation-name: scrolling__qualities;
+    height: 100px;
     margin: 0 auto;
     white-space: nowrap;
     overflow: hidden;

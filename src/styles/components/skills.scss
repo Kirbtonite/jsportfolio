@@ -5,8 +5,14 @@
     gap: 30px;
     .crown {
         position: absolute;
-        bottom: -18%;
+        bottom: -17%;
         right: 10%;
+    }
+    .credits {
+        margin: 0;
+        max-width: 50%;
+        color: var(--color-gray);
+        font-size: 14px;
     }
 }
 .skill {
