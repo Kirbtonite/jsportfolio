@@ -10,3 +10,7 @@
     align-items: center;
     gap: 30px;
 }
+.reorder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
