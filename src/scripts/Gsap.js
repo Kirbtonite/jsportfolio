@@ -11,6 +11,10 @@ export default class Gsap {
     /*  this.checkWindowSize = setInterval(this.responsiveAnimated, 1000); */
   }
   init() {
+    this.animationScrollTrigger();
+    this.draggableElement();
+  }
+  animationScrollTrigger() {
     gsap
       .timeline({
         scrollTrigger: {
@@ -26,7 +30,8 @@ export default class Gsap {
         x: 200,
         rotation: 720,
       });
-
+  }
+  draggableElement() {
     Draggable.create('.crown', {
       inertia: true,
     });
