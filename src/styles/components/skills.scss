@@ -5,14 +5,48 @@
     gap: 30px;
     .crown {
         position: absolute;
-        bottom: -17%;
-        right: 10%;
+        width: 50%;
     }
     .credits {
         margin: 0;
         max-width: 50%;
         color: var(--color-gray);
         font-size: 14px;
+    }
+    .drag-gif {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        bottom: -8%;
+        right: 10%;
+        width: 450px;
+        height: 400px;
+
+        .text__gif {
+            height: 50px;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 15px;
+            border-radius: 25%;
+            background-color: var(--color-white);
+            top: 10%;
+            right: 5%;
+        }
+        .text__gif__bottom__left:before {
+            content: '';
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 24px solid #fff;
+            border-right: 12px solid transparent;
+            border-top: 12px solid #fff;
+            border-bottom: 20px solid transparent;
+            left: 5px;
+            bottom: -24px;
+        }
     }
 }
 .skill {

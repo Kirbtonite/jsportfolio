@@ -22,7 +22,7 @@
 }
 .swiper-pagination {
     padding-top: 20px;
-    --swiper-pagination-color: var(--color-hover);
+    --swiper-pagination-color: var(--color-bg-primary);
     --swiper-pagination-bullet-inactive-color: var(--color-gray);
 }
 
@@ -36,7 +36,7 @@
 .swiper-pagination-bullet {
     --size: 30px;
 
-    border: 2px solid var(--color-hover);
+    border: 2px solid var(--color-bg-primary);
     border-radius: 100%;
     height: var(--size);
     margin: 0 5px;

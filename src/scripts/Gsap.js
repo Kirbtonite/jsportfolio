@@ -32,7 +32,7 @@ export default class Gsap {
       });
   }
   draggableElement() {
-    Draggable.create('.crown', {
+    Draggable.create('.drag-gif', {
       inertia: true,
     });
   }
