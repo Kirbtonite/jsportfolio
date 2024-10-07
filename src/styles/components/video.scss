@@ -21,7 +21,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        color: var(--color-primary);
+        color: var(--color-hover);
         text-shadow: 0 0 4px rgba(0, 0, 0, 1);
         transition: 0.4s $ease-out-expo;
         transition-property: opacity, transform, color;
@@ -35,7 +35,7 @@
 
     &:hover .icon {
         transform: translateX(50%) translate(-50%, -50%);
-        color: var(--color-hover);
+        color: var(--color-bg-primary);
     }
 }
 .video__media {

@@ -5,7 +5,7 @@ export default class Modal {
     this.modal = document.querySelector('.modal');
     this.closeModalBTN = document.querySelector('.close-modal');
     this.image = document.createElement('img');
-    this.text = document.createElement('p');
+    /*  this.text = document.createElement('p'); */
 
     this.init();
   }
@@ -19,7 +19,7 @@ export default class Modal {
     for (let i = 0; i < this.modals.length; i++) {
       const chemin = event.target.getAttribute('src');
       this.image.setAttribute('src', chemin);
-      const nom = event.target.getAttribute('alt');
+      /*       const nom = event.target.getAttribute('alt');
       console.log(nom);
       if (nom == 'css form') {
         this.text.textContent = 'Code CSS pour les inputs fields du formulaire';
@@ -34,7 +34,7 @@ export default class Modal {
       }
 
       this.modal.appendChild(this.text);
-      this.text.classList.add('visible');
+      this.text.classList.add('visible'); */
 
       this.modal.appendChild(this.image);
       this.modal.classList.add('visible');
@@ -44,6 +44,6 @@ export default class Modal {
   }
   closeModal() {
     this.modal.classList.remove('visible');
-    this.text.classList.remove('visible');
+    /*  this.text.classList.remove('visible'); */
   }
 }

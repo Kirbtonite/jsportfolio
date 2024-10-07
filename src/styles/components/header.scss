@@ -223,6 +223,9 @@
     font-family: var(--font-secondary);
     z-index: 10;
     display: none;
+    &:hover {
+        color: var(--color-hover);
+    }
     @media screen and (min-width: $breakpoint-md) {
         display: block;
     }
@@ -233,6 +236,9 @@
     z-index: 10;
     color: var(--color-primary);
     display: block;
+    &:hover {
+        color: var(--color-hover);
+    }
     @media screen and (min-width: $breakpoint-md) {
         display: none;
     }
