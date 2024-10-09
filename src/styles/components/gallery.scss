@@ -23,9 +23,6 @@
             }
         }
         overflow: hidden;
-        &:hover {
-            animation-play-state: paused;
-        }
     }
 
     .gallery__media::before {
@@ -42,7 +39,16 @@
         top: -50%;
         left: -50%;
         animation: rotate 8s linear infinite;
+        transition: 0.3s all ease-out;
+
+        animation-play-state: paused;
         z-index: 0;
+        opacity: 0;
+    }
+    .gallery__media:hover::before {
+        animation-play-state: running;
+        opacity: 1;
+        transition: opacity 0.3s ease-in;
     }
     @keyframes rotate {
         from {
@@ -59,7 +65,7 @@
     }
 }
 
-.box {
+/* .box {
     width: 60vmin;
     height: 50vmin;
     display: grid;
@@ -106,7 +112,7 @@
     &:hover {
         animation-play-state: paused;
     }
-}
+} */
 
 @property --border-angle {
     syntax: '<angle>';
