@@ -37,7 +37,12 @@ export default class Gsap {
     });
   }
   changeText() {
-    const tl = gsap.timeline({ repeat: -1, yoyo: true });
+    const tl = gsap.timeline({
+      repeat: -1,
+      repeatDelay: 2,
+      delay: 2,
+      yoyo: true,
+    });
     tl.to('.tagline', { duration: 2, text: 'Intégrateur web junior' });
   }
   responsiveAnimated() {
