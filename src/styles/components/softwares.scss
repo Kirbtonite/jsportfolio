@@ -2,6 +2,15 @@
     margin-top: 70px;
     display: flex;
     justify-content: space-around;
+    @media screen and (max-width: $breakpoint-md) {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
 }
 .software {
     display: flex;
@@ -9,8 +18,10 @@
 
     align-items: center;
     gap: 30px;
+    img {
+        @media screen and (max-width: $breakpoint-sm) {
+            max-width: 100px;
+            max-height: 100px;
+        }
+    }
 }
-/* .reorder {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-} */

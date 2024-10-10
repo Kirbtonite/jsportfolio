@@ -6,4 +6,7 @@
     svg {
         max-height: 100%;
     }
+    @media screen and (max-width: $breakpoint-md) {
+        position: relative;
+    }
 }
