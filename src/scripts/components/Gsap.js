@@ -3,8 +3,9 @@ import { gsap } from 'gsap';
 import { Flip } from 'gsap/Flip';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Draggable } from 'gsap/Draggable';
+import { TextPlugin } from 'gsap/TextPlugin';
 
-gsap.registerPlugin(Flip, ScrollTrigger, Draggable);
+gsap.registerPlugin(Flip, ScrollTrigger, Draggable, TextPlugin);
 export default class Gsap {
   constructor() {
     this.init();
@@ -13,28 +14,31 @@ export default class Gsap {
   init() {
     this.animationScrollTrigger();
     this.draggableElement();
+    this.changeText();
   }
   animationScrollTrigger() {
-    gsap
+    /*     gsap
       .timeline({
         scrollTrigger: {
-          trigger: '.ball',
+          trigger: '.left',
           scrub: true,
         },
       })
-      .to('.ball', {
-        x: 100,
-        rotation: 360,
+      .to('.left', {
+        x: -100,
       })
-      .to('.ball', {
+      .to('.left', {
         x: 200,
-        rotation: 720,
-      });
+      }); */
   }
   draggableElement() {
     Draggable.create('.drag-gif', {
       inertia: true,
     });
+  }
+  changeText() {
+    const tl = gsap.timeline({ repeat: -1, yoyo: true });
+    tl.to('.tagline', { duration: 2, text: 'Intégrateur web junior' });
   }
   responsiveAnimated() {
     this.vw = window.innerWidth;

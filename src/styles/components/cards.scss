@@ -2,6 +2,7 @@
     display: grid;
     gap: 70px;
     margin-top: 70px;
+    overflow: hidden;
 }
 .card {
     display: flex;
@@ -21,8 +22,13 @@
         border-style: solid;
         border-color: var(--color-black);
         padding: 10px 0;
+        p {
+            font-size: var(--font-size-h4);
+            font-family: var(--font-secondary);
+            line-height: 1.1;
+        }
         .vertical__line {
-            width: 2px;
+            width: 4px;
 
             background-color: var(--color-black);
             margin: 0 20px;
@@ -36,8 +42,8 @@
             margin: 0;
         }
         .button {
-            width: 100%;
-            max-width: 270px;
+            width: 270px;
+            /* max-width: 270px; */
             margin: 0;
         }
     }

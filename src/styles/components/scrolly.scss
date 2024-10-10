@@ -4,7 +4,7 @@
 .has-js {
     [data-scrolly='fromBottom'] {
         opacity: 0;
-        transform: translateY(60px);
+        transform: translateY(120px);
         transition: all 2s $ease-out-expo;
         &.is-active {
             opacity: 1;
@@ -13,7 +13,7 @@
     }
     [data-scrolly='fromLeft'] {
         opacity: 0;
-        transform: translateX(-10px);
+        transform: translateX(-120px);
         transition: all 2s $ease-out-expo;
         &.is-active {
             opacity: 1;
@@ -22,7 +22,7 @@
     }
     [data-scrolly='fromTop'] {
         opacity: 0;
-        transform: translateY(-60px);
+        transform: translateY(-120px);
         transition: all 2s $ease-out-expo;
         &.is-active {
             opacity: 1;
@@ -31,7 +31,7 @@
     }
     [data-scrolly='fromRight'] {
         opacity: 0;
-        transform: translateX(10px);
+        transform: translateX(120px);
         transition: all 2s $ease-out-expo;
         &.is-active {
             opacity: 1;

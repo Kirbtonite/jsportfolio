@@ -2,4 +2,9 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 50px;
+    p {
+        font-size: var(--font-size-h3);
+        margin: 0;
+        font-family: var(--font-secondary);
+    }
 }

@@ -5,6 +5,7 @@ import Carousel from './components/Carousel';
 import Youtube from './components/Youtube';
 import Form from './components/Form';
 import Modal from './components/Modal';
+import Gsap from './components/Gsap';
 export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
@@ -15,6 +16,7 @@ export default class ComponentFactory {
       Scrolly,
       Form,
       Modal,
+      Gsap,
     };
     this.init();
   }
