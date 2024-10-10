@@ -2,6 +2,12 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 50px;
+    @media screen and (max-width: $breakpoint-md) {
+        .video {
+            order: -1;
+        }
+        grid-template-columns: 1fr;
+    }
     p {
         font-size: var(--font-size-h3);
         margin: 0;
