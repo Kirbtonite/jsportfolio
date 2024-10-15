@@ -45,7 +45,7 @@ export default class Gsap {
     });
     tl.to('.tagline', { duration: 2, text: 'Intégrateur web junior' });
   }
-  responsiveAnimated() {
+  /*   responsiveAnimated() {
     this.vw = window.innerWidth;
     console.log(this.vw);
     const softwares = document.querySelector('.grid__softwares');
@@ -69,5 +69,5 @@ export default class Gsap {
         // you can use any other tweening properties here too, like onComplete, onUpdate, delay, etc.
       });
     }
-  }
+  } */
 }

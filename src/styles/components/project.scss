@@ -1,8 +1,11 @@
+.design__website,
+.integration__website {
+    overflow: hidden;
+}
 .step__description {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 40px 0;
-    overflow: hidden;
     @media screen and (max-width: $breakpoint-sm) {
         grid-template-columns: 1fr;
     }
@@ -10,6 +13,7 @@
 .screenshots__examples {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
     img {
         display: block;
         width: 100%;
@@ -57,7 +61,7 @@
     img {
         width: 100%;
 
-        height: 680px;
+        height: 600px;
         object-fit: cover;
         @media screen and (max-width: $breakpoint-sm) {
             height: 300px;

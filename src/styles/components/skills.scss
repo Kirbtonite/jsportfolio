@@ -1,8 +1,12 @@
-.skills .wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.skills {
+    overflow: hidden;
+    .wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
     .crown {
         position: absolute;
         width: 50%;
@@ -92,6 +96,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
+
     .icon {
         color: var(--color-hover);
     }

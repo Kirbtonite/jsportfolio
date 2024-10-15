@@ -9,14 +9,18 @@
 .marquee {
     display: inline-block;
     animation-name: scrolling__qualities;
-    height: 100px;
+    height: 90px;
     margin: 0 auto;
     white-space: nowrap;
     overflow: hidden;
     animation: marquee 15s linear infinite;
+    @media screen and (max-width: $breakpoint-sm) {
+        height: 50px;
+    }
 }
 
 .marquee h2 {
+    overflow: hidden;
     display: inline-block;
 
     font-weight: 700;

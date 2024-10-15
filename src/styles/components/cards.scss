@@ -1,8 +1,10 @@
+.projects {
+    overflow: hidden;
+}
 .cards {
     display: grid;
     gap: 70px;
     margin-top: 70px;
-    overflow: hidden;
 }
 .card {
     display: flex;
