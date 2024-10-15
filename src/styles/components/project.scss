@@ -3,6 +3,9 @@
     grid-template-columns: 1fr 1fr;
     margin: 40px 0;
     overflow: hidden;
+    @media screen and (max-width: $breakpoint-sm) {
+        grid-template-columns: 1fr;
+    }
 }
 .screenshots__examples {
     display: grid;
@@ -21,15 +24,24 @@
 }
 .more__infos {
     display: flex;
+    @media screen and (max-width: $breakpoint-sm) {
+        flex-direction: column;
+    }
+    .softwares {
+        @media screen and (max-width: $breakpoint-sm) {
+            padding: 20px 0;
+        }
+    }
     .software {
         flex-direction: row;
         justify-content: center;
+
         img {
             max-width: 75px;
             max-height: 75px;
             @media screen and (max-width: $breakpoint-sm) {
-                max-width: 50px;
-                max-height: 50px;
+                max-width: 40px;
+                max-height: 40px;
             }
         }
     }
@@ -47,5 +59,8 @@
 
         height: 680px;
         object-fit: cover;
+        @media screen and (max-width: $breakpoint-sm) {
+            height: 300px;
+        }
     }
 }
