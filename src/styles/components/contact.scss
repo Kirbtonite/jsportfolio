@@ -1,5 +1,13 @@
 .socials {
     margin: 20px 0 80px;
+    @media screen and (max-width: $breakpoint-sm) {
+        margin-bottom: 20px;
+    }
+}
+.contact__infos {
+    @media screen and (max-width: $breakpoint-sm) {
+        margin-bottom: 20px;
+    }
 }
 .social {
     display: flex;
@@ -15,6 +23,9 @@
 .contact .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @media screen and (max-width: $breakpoint-sm) {
+        grid-template-columns: 1fr;
+    }
 }
 .contact__form {
     .error__text {
