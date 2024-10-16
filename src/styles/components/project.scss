@@ -1,5 +1,6 @@
 .design__website,
-.integration__website {
+.integration__website,
+.creation {
     overflow: hidden;
 }
 .step__description {
@@ -65,6 +66,16 @@
         object-fit: cover;
         @media screen and (max-width: $breakpoint-sm) {
             height: 300px;
+        }
+    }
+}
+.project__credits .credit {
+    display: flex;
+
+    p {
+        margin: 20px 0;
+        &:nth-child(odd) {
+            font-weight: 700;
         }
     }
 }
