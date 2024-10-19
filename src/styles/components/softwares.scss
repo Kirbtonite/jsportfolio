@@ -1,16 +1,14 @@
 .grid__softwares {
     margin-top: 70px;
-    display: flex;
-    justify-content: space-around;
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 40px;
+
     @media screen and (max-width: $breakpoint-md) {
-        flex-wrap: wrap;
-        justify-content: space-between;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     @media screen and (max-width: $breakpoint-sm) {
-        display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 20px;
     }
 }
 .software {
@@ -18,8 +16,11 @@
     flex-direction: column;
 
     align-items: center;
+    justify-content: center;
+    text-align: center;
     gap: 30px;
     img {
+        max-width: 170px;
         @media screen and (max-width: $breakpoint-sm) {
             max-width: 100px;
             max-height: 100px;
