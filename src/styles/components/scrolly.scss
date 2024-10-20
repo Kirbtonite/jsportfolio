@@ -41,8 +41,9 @@
     [data-scrolly='flipFromBottom'] {
         opacity: 0;
 
-        transform: rotateX(90deg) translate3d(0, 60px, 0);
+        transform: rotateX(90deg) translate3d(0, 120px, 0);
         transition: all 2s $ease-out-expo;
+        transform-style: preserve-3d;
 
         &.is-active {
             opacity: 1;

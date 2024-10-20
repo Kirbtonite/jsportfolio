@@ -1,5 +1,6 @@
 .skills {
     overflow: hidden;
+
     .wrapper {
         position: relative;
         display: flex;
@@ -34,7 +35,7 @@
         display: flex;
         justify-content: center;
         align-items: end;
-        bottom: -8%;
+        bottom: -7%;
         right: 10%;
         width: 450px;
         height: 400px;
@@ -90,6 +91,12 @@
         @media screen and (max-width: $breakpoint-sm) {
             flex-direction: column;
         }
+    }
+}
+.animation {
+    margin-bottom: 10px;
+    @media screen and (max-width: $breakpoint-md) {
+        margin-bottom: -10%;
     }
 }
 .skill {
