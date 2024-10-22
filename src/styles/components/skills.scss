@@ -43,7 +43,7 @@
             position: relative;
         }
         @media screen and (max-width: $breakpoint-sm) {
-            width: 100%;
+            width: 80%;
         }
 
         .text__gif {
@@ -69,8 +69,8 @@
                 right: -5%;
             }
             @media screen and (max-width: $breakpoint-xs) {
-                top: -5%;
-                right: -15%;
+                top: 10%;
+                right: -25%;
             }
         }
         .text__gif__bottom__left:before {
@@ -90,6 +90,7 @@
         display: flex;
         @media screen and (max-width: $breakpoint-sm) {
             flex-direction: column;
+            align-items: center;
         }
     }
 }

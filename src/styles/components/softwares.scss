@@ -1,12 +1,9 @@
 .grid__softwares {
     margin-top: 70px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     row-gap: 40px;
 
-    @media screen and (max-width: $breakpoint-md) {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
     @media screen and (max-width: $breakpoint-sm) {
         grid-template-columns: 1fr 1fr;
     }
