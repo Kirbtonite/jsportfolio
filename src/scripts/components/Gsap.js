@@ -5,12 +5,19 @@ import { TextPlugin } from 'gsap/TextPlugin';
 
 gsap.registerPlugin(Draggable, TextPlugin);
 export default class Gsap {
-  constructor() {
+  constructor(element) {
+    this.element = element;
+    this.text = document.querySelector('.tagline');
+    this.gif = document.querySelector('.drag-gif');
     this.init();
   }
   init() {
-    this.draggableElement();
-    this.changeText();
+    if (this.gif) {
+      this.draggableElement();
+    }
+    if (this.text) {
+      this.changeText();
+    }
   }
 
   draggableElement() {
