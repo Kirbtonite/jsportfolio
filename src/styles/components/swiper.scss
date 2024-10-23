@@ -1,0 +1,30 @@
+.swiper-pagination {
+    padding-top: 20px;
+    --swiper-pagination-color: var(--color-bg-primary);
+    --swiper-pagination-bullet-inactive-color: var(--color-gray);
+}
+
+.swiper-pagination-bullets {
+    position: sticky;
+    margin-top: 40px;
+}
+
+.swiper-pagination-bullet {
+    --size: 30px;
+
+    border: 2px solid var(--color-bg-primary);
+    border-radius: 100%;
+    height: var(--size);
+    margin: 0 5px;
+    transition: border 0.4s ease-out;
+    width: var(--size);
+}
+.swiper-slide {
+    border: 5px solid var(--color-bg-primary);
+    box-sizing: border-box;
+}
+.swiper {
+    @media screen and (max-width: $breakpoint-sm) {
+        padding: 0 20px;
+    }
+}

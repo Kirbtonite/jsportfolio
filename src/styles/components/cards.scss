@@ -19,8 +19,6 @@
     padding-top: 50px;
     @media screen and (max-width: $breakpoint-md) {
         flex-wrap: wrap;
-    }
-    @media screen and (max-width: $breakpoint-sm) {
         gap: 20px;
     }
 
@@ -53,10 +51,7 @@
         }
         .button {
             width: 270px;
-            /* max-width: 270px; */
             margin: 0;
-            @media screen and (max-width: $breakpoint-sm) {
-            }
         }
     }
     .card__media {
@@ -69,6 +64,11 @@
             width: 100%;
 
             object-fit: cover;
+        }
+        @media screen and (max-width: $breakpoint-md) {
+            &:nth-child(even) {
+                order: -1;
+            }
         }
     }
 }

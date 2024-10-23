@@ -1,15 +1,12 @@
 .interests {
     overflow: hidden;
-    .swiper-slide {
-        border: 3px solid var(--color-black);
-        border-radius: 20px;
-        box-sizing: border-box;
-    }
 
     .swiper-pagination-bullets {
         margin-bottom: 70px;
     }
     .swiper-slide {
+        border: 3px solid var(--color-black);
+        border-radius: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -21,26 +18,4 @@
             object-fit: cover;
         }
     }
-}
-
-.swiper-pagination {
-    padding-top: 20px;
-    --swiper-pagination-color: var(--color-bg-primary);
-    --swiper-pagination-bullet-inactive-color: var(--color-gray);
-}
-
-.swiper-pagination-bullets {
-    position: sticky;
-    margin-top: 40px;
-}
-
-.swiper-pagination-bullet {
-    --size: 30px;
-
-    border: 2px solid var(--color-bg-primary);
-    border-radius: 100%;
-    height: var(--size);
-    margin: 0 5px;
-    transition: border 0.4s ease-out;
-    width: var(--size);
 }

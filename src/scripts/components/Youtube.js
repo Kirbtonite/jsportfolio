@@ -8,6 +8,7 @@ export default class Youtube {
     this.playerReady = false;
     this.options = {
       noControls: 1,
+      mute: false,
     };
 
     Youtube.instances.push(this);
@@ -40,6 +41,9 @@ export default class Youtube {
   setOptions() {
     if ('noControls' in this.element.dataset) {
       this.options.noControls = 0;
+    }
+    if ('mute' in this.element.dataset) {
+      this.options.mute = true;
     }
   }
   initPlayer(event) {
