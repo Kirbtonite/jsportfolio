@@ -9,11 +9,15 @@
     border-radius: 10px;
 }
 
+::-webkit-scrollbar-track {
+    background: var(--color-white);
+}
+
 ::-webkit-scrollbar-thumb:hover {
     background: var(--color-green);
 }
 ::-webkit-scrollbar-button:single-button {
-    background-color: var(--color-primary);
+    background-color: var(--color-white);
     display: block;
     border-style: solid;
     height: 13px;
