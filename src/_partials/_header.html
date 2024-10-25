@@ -9,7 +9,7 @@
 
     <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LVND9FSJZX"></script>
-  <script>
+  <script async>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -17,7 +17,7 @@
     gtag('config', 'G-LVND9FSJZX');
   </script>
 
-     <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js" defer></script>
+     <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js" async></script>
     <script src="scripts/main.js" defer></script>
   </head>
 
@@ -29,14 +29,14 @@
           <a href="index.html" class="logo__mobile">JS</a>
           <nav class="header__nav nav-primary">
               <ul>
-                  <li><a href="index.html" class="nav-primary__item">Accueil</a></li>
-                  <li><a href="projects.html" class="nav-primary__item">Projets</a></li>
-                  <li><a href="about.html" class="nav-primary__item">À propos</a></li>
-                  <li><a href="contact.html" class="nav-primary__item">Contact</a></li>
+                  <li><a href="index.html" class="nav-primary__item" aria-label="Page Accueil">Accueil</a></li>
+                  <li><a href="projects.html" class="nav-primary__item" aria-label="Page Projects">Projets</a></li>
+                  <li><a href="about.html" class="nav-primary__item" aria-label="Page À Propos">À propos</a></li>
+                  <li><a href="contact.html" class="nav-primary__item" aria-label="Page Contact">Contact</a></li>
               </ul>
           </nav>
              
-           <button class="header__toggle js-toggle">
+           <button class="header__toggle js-toggle" aria-label="Menu burger mobile">
               <span></span>
               <span></span>
               <span></span>

@@ -3,6 +3,12 @@
 .creation {
     overflow: hidden;
 }
+.hero__project {
+    h1 {
+        font-size: var(--font-size-h2);
+        font-weight: 400;
+    }
+}
 .step__description {
     display: grid;
     grid-template-columns: 1fr 1fr;
