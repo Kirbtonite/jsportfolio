@@ -17,8 +17,6 @@ export default class Form {
   }
 
   onSubmit(event) {
-    event.preventDefault();
-
     if (this.validate()) {
       //success
       console.log('submit success');
