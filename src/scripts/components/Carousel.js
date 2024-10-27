@@ -26,6 +26,8 @@ export default class Carousel {
     if (full) {
       full.style.setProperty = ('overflow', 'visible');
     }
+    /* data that add more slides per view, depending of the width of the page 
+    / data qui ajoute plus de slides par vue, dépend du width de la page */
     if ('split' in this.element.dataset) {
       this.options.breakpoints = {
         768: {
@@ -36,6 +38,7 @@ export default class Carousel {
         },
       };
     }
+    // data that changes slide automatically / data qui change le slide automatiquement
     if ('autoplay' in this.element.dataset) {
       this.options.autoplay = {
         delay: 5000,
@@ -43,6 +46,7 @@ export default class Carousel {
         disableOnInteraction: false,
       };
     }
+    // data to make the swiper loop / data pour bouclé le carrousel
     if ('loop' in this.element.dataset) {
       this.options.loop = {
         loop: true,

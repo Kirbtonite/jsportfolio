@@ -6,7 +6,7 @@ export default class Lottie {
   }
 
   init() {
-    // Votre code pourrait commencer comme ceci
+    // render lotty animation / rendu animation lotty
     const animation = Lotty.loadAnimation({
       container: document.querySelector('.animation'),
       path: '../assets/lottie/redhood.json',

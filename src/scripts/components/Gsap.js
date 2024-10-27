@@ -5,8 +5,7 @@ import { TextPlugin } from 'gsap/TextPlugin';
 
 gsap.registerPlugin(Draggable, TextPlugin);
 export default class Gsap {
-  constructor(element) {
-    this.element = element;
+  constructor() {
     this.text = document.querySelector('.tagline');
     this.gif = document.querySelector('.drag-gif');
     this.init();
@@ -21,11 +20,13 @@ export default class Gsap {
   }
 
   draggableElement() {
+    // make element draggrable with the mouse / rendre l'élément déplaçable avec la souris
     Draggable.create('.drag-gif', {
       inertia: true,
     });
   }
   changeText() {
+    // swap text / échanger le texte
     const tl = gsap.timeline({
       repeat: -1,
       repeatDelay: 1,
