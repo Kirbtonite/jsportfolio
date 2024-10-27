@@ -16,7 +16,7 @@ export default class Youtube {
     if (this.youtubeId) {
       Youtube.loadScript();
     } else {
-      console.error('Vous devez spécifier un iD');
+      /* console.error('Vous devez spécifier un iD'); */
     }
   }
   static loadScript() {

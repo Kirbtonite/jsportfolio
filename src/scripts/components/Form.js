@@ -19,11 +19,11 @@ export default class Form {
   onSubmit(event) {
     if (this.validate()) {
       //success
-      console.log('submit success');
+      /*  console.log('submit success'); */
       this.showConfirmation();
     } else {
       //error
-      console.log('submit failed');
+      /* console.log('submit failed'); */
     }
   }
 
